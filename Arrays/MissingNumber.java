@@ -16,3 +16,4 @@ public class MissingNumber {
         System.out.println(findMissing(arr, n));
     }
 }
+// This code finds the missing number in an array containing numbers from 1 to n. The expected output for the given array is 3, as it is the missing number.
