@@ -81,13 +81,17 @@ public class CarRentalMain {
       System.out.println("Driver only avail for daily rental: Rs.500 per day");
       System.out.println("Enter Car Type: ");
       String carType = sc.next();
-      System.out.println("Need Monthly Rental? Enter True or False: ");
+
+   
+   System.out.println("Need Monthly Rental? Enter True or False: ");
       boolean isMonthly = sc.nextBoolean();
+      System.out.println("Need weekly Rental? Enter True or False: ");
+	boolean isDays = sc.nextBoolean();
 
       if (isMonthly) {
 		rental.bookCar(carType, true);
         }
-	else {
+	else if(isDays) {
             System.out.println("Enter Number of Days: ");
             int days = sc.nextInt();
 
@@ -96,5 +100,10 @@ public class CarRentalMain {
 
             rental.bookCar(days, driver, carType);
         }
+	else{
+		System.out.println("Enter Number of Days: ");
+            int days = sc.nextInt();
+            rental.bookCar(days, carType);
+	}
 }
 }
