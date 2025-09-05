@@ -35,6 +35,7 @@ class UnitMatEx{
 		else{
 			System.out.println("The given matrix is not an unit matrix ");
 		}
+		sc.close();
 }
 }
 
